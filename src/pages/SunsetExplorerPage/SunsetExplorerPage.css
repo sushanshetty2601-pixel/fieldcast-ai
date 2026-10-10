@@ -1,0 +1,120 @@
+.sunset-page {
+  padding-top: 64px;
+  min-height: 100vh;
+}
+
+.sunset-hero {
+  position: relative;
+  padding: var(--space-8) 0 var(--space-12);
+  overflow: hidden;
+}
+
+.sunset-hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('/images/sunset/media_1791623252839_b46b7b8c.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.sunset-hero-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(15, 23, 42, 0.4) 0%, rgba(10, 15, 30, 0.9) 100%);
+}
+
+.sunset-hero-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.sunset-hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.1;
+  margin-bottom: var(--space-3);
+  text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.sunset-hero-subtitle {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  line-height: 1.6;
+  margin-bottom: var(--space-8);
+}
+
+.sunset-meta {
+  display: flex;
+  gap: var(--space-8);
+  padding: var(--space-4) var(--space-6);
+  width: fit-content;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.meta-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.meta-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 2px;
+}
+
+.meta-value {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.demo-badge-wrap {
+  margin-left: auto;
+}
+
+.sunset-body {
+  padding-top: var(--space-8);
+  padding-bottom: var(--space-16);
+}
+
+.sunset-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-8);
+  align-items: start;
+}
+
+.sunset-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-5);
+}
+
+.sunset-map-wrapper {
+  position: sticky;
+  top: 80px;
+  height: calc(100vh - 120px);
+  padding: var(--space-2);
+}
+
+@media (max-width: 1024px) {
+  .sunset-layout {
+    grid-template-columns: 1fr;
+  }
+  .sunset-map-wrapper {
+    position: static;
+    height: 400px;
+    margin-bottom: var(--space-8);
+    order: -1; /* Move map to top on mobile */
+  }
+}

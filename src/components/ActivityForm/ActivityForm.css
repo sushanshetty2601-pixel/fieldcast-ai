@@ -1,0 +1,60 @@
+.activity-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.activity-form-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-5);
+}
+
+.form-column {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.form-error {
+  background: rgba(239,68,68,0.1);
+  border: 1px solid rgba(239,68,68,0.25);
+  border-radius: var(--radius-md);
+  color: #f87171;
+  font-size: 0.875rem;
+  padding: var(--space-3) var(--space-4);
+}
+
+.activity-form-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+  flex-wrap: wrap;
+}
+
+.form-disclaimer {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  flex: 1;
+}
+
+/* Loading spinner */
+.form-spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+  display: inline-block;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@media (max-width: 640px) {
+  .activity-form-fields {
+    grid-template-columns: 1fr;
+  }
+}

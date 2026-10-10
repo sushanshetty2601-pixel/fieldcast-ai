@@ -1,0 +1,42 @@
+.sunset-map-container {
+  height: 100%;
+  width: 100%;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+  position: relative;
+  min-height: 400px;
+}
+
+.sunset-map {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.map-popup {
+  text-align: center;
+}
+
+.map-popup strong {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.map-popup p {
+  margin: 0 0 8px 0;
+  color: #666;
+  font-size: 0.85rem;
+}
+
+/* Override leaflet styles for dark mode compatibility if needed */
+.leaflet-popup-content-wrapper {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-subtle);
+}
+.leaflet-popup-tip {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-subtle);
+}
