@@ -36,7 +36,7 @@ export default function Navbar({ currentPage, navigateTo }) {
             )}
           </button>
           <a
-            href="https://github.com"
+            href="https://github.com/sushanshetty2601-pixel/fieldcast-ai"
             target="_blank"
             rel="noopener noreferrer"
             className="navbar-link"
