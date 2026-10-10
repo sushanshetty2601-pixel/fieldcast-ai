@@ -4,7 +4,7 @@
 
 An open-source AI-powered outdoor intelligence platform designed to help people make better decisions before stepping outside.
 
-🔗 [🚀 Live Demo](https://fieldcast-ai.onrender.com) · [💻 GitHub Repository](https://github.com/sushanshetty2601-pixel/fieldcast-ai)
+🔗 [🚀 Live Demo](https://fieldcast-ai.onrender.com) 
 
 ---
 
